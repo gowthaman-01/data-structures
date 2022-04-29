@@ -30,6 +30,7 @@ class SinglyLinkedList:
         self.size -= 1
         return first
     
+    # Insert value at a certain index
     def insert(self, index, value): 
         if index >= self.size: 
             return -1
@@ -45,14 +46,3 @@ class SinglyLinkedList:
         current.next = newNode
         newNode.next = temp
         return 0
-
-ll = SinglyLinkedList(6)
-ll.append(8)
-ll.append(10)
-ll.push(4)
-ll.push(2)
-ll.push(0)
-# 0 2 4 6 8 10
-print(ll.head.next.next.value)
-print(ll.size)
-print(ll.insert(6, 3))
