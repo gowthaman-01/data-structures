@@ -1,4 +1,6 @@
 from collections import deque
+
+
 class Graph:
     def __init__(self):
         self.graph = {}
@@ -22,4 +24,3 @@ class Graph:
                 if top in self.graph:
                     for adj in self.graph[top]:
                         q.append(adj)
-        
