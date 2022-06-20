@@ -1,13 +1,13 @@
 def check(target, array, possible, store):
     if target == 0:
-        return []
+        return True
     if target < 0:
-        return None
+        return False
     if target in store:
         return store[target]
     for number in array:
         remainder = target - number
-        if check(remainder, array, possible, store) != None:
+        if check(remainder, array, possible, store):
             possible.append(number)
             store[target] = True
             return store[target]

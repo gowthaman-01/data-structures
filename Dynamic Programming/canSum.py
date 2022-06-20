@@ -1,8 +1,10 @@
 def check(array, target, possible):
-    if target == 0 or (target in possible and possible[target]):
+    if target == 0:
         return True
-    if target < 0 or (target in possible and not possible[target]):
+    if target < 0:
         return False
+    if target in possible:
+        return possible[target]
     for number in array:
         remainder = target - number
         if check(array, remainder, possible):
