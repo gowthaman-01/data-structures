@@ -2,7 +2,6 @@
 #   1) Successor/Predecessor
 #   2) Remove
 #   3) Balance
-
 class TreeNode: 
     def __init__(self, value):
         self.value = value

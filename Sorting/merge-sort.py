@@ -30,3 +30,10 @@ def divide(arr, l, r):
 def mergeSort(arr):
     l, r = 0, len(arr) - 1
     return divide(arr, l, r)
+
+# Driver code
+array = [ 10, 7, 8, 9, 1, 5, 17, 13, 15, 18, 19, 20, 22, 11]
+print(mergeSort(array))
+
+
+

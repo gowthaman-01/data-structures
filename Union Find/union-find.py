@@ -16,7 +16,6 @@ class Union:
     def combine(self, element1, element2):
         element1 = self.find(element1)
         element2 = self.find(element2)
-        print(element1, element2)
         if element1 == element2:
             return
 
@@ -36,3 +35,5 @@ union.combine("NUS", "SMU")
 union.combine("MIT", "UIUC")
 union.combine("CMU", "UIUC")
 union.combine("HV", "UIUC")
+
+print(union.elements)
